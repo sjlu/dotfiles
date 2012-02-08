@@ -1,4 +1,4 @@
-TERM=xterm
+TERM=xterm-256color
 export EDITOR=vim
 
 # ~/.bashrc: executed by bash(1) for non-login shells.

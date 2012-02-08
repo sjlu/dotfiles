@@ -1,5 +1,10 @@
 # russ frank's .screenrc
 
+vbell off
+
+attrcolor b ".I"
+term xterm-256color
+
 # change the message displayed at the bottom of the screen when
 # activity is detected
 activity "activity: window %"
