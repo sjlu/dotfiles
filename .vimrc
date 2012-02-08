@@ -68,3 +68,7 @@ set cursorcolumn!
 
 " auto syntax check
 " let g:checksyntax_auto = 1
+
+" some key rebindings
+:command -bang Q quit<bang>
+:command -bang W write<bang>
