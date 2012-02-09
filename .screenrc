@@ -2,6 +2,7 @@
 
 vbell off
 startup_message off
+defscrollback 1000
 
 attrcolor b ".I"
 term xterm-256color
@@ -50,7 +51,7 @@ caption always '%?%F%{.g.}%?%-w%{= bw}%50>%n %t%{-}%+w%<'
 # regardless of how many times you split.  This shows the time,
 # date, load avgs and the hostname, aligned to the right of the
 # screen.
-hardstatus alwayslastline "%=%C:%s %A %D %M %d %Y load: %l on %H"
+hardstatus alwayslastline "%H (%l) %= %D, %M %d %Y -%C:%s %A"
 
 #pgup / pgdown
 bindkey -m "^[[6;5~" stuff "^f"
@@ -59,9 +60,5 @@ bindkey -m "^[[5;5~" stuff "^b"
 bindkey "^[[6;5~" eval "copy" "stuff ^f"
 bindkey "^[[5;5~" eval "copy" "stuff ^b"
 
-screen
-title ""
-screen
-title ""
 screen
 title ""
