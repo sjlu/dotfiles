@@ -51,7 +51,7 @@ caption always '%?%F%{.g.}%?%-w%{= bw}%50>%n %t%{-}%+w%<'
 # regardless of how many times you split.  This shows the time,
 # date, load avgs and the hostname, aligned to the right of the
 # screen.
-hardstatus alwayslastline "%H (%l) %= %D, %M %d %Y -%C:%s %A"
+hardstatus alwayslastline "%= %D, %m/%d %C:%s %A [%H]"
 
 #pgup / pgdown
 bindkey -m "^[[6;5~" stuff "^f"
