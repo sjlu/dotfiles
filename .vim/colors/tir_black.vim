@@ -36,7 +36,7 @@ hi Error gui=undercurl ctermfg=203 ctermbg=none cterm=underline guisp=#FF6C60
 hi ErrorMsg guifg=white guibg=#FF6C60 gui=bold ctermfg=white ctermbg=203 cterm=bold
 hi WarningMsg guifg=white guibg=#FF6C60 gui=bold ctermfg=white ctermbg=203 cterm=bold
 
-hi ModeMsg guifg=black guibg=#C6C5FE gui=bold ctermfg=0 ctermbg=189 cterm=bold
+hi ModeMsg guifg=black guibg=#C6C5FE gui=bold ctermfg=15 ctermbg=93 cterm=bold
 
 if version >= 700 " Vim 7.x specific colors
  hi CursorLine guibg=#121212 gui=none ctermbg=234 cterm=none
