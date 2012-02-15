@@ -45,13 +45,6 @@ call pathogen#helptags()
 filetype plugin on
 syntax on
 
-" nerdtree stuffs
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd vimenter * if !argc() | NERDTree | endif
-
-" php stuffs (PIV)
-let g:DisableAutoPHPFolding = 1
-
 " indent-guides stuff
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
@@ -65,9 +58,6 @@ hi CursorLine     cterm=NONE ctermbg=17
 hi CursorColumn   cterm=NONE ctermbg=17
 set cursorline!
 set cursorcolumn!
-
-" auto syntax check
-" let g:checksyntax_auto = 1
 
 " some key rebindings
 :command -bang Q quit<bang>
