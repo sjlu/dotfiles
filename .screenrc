@@ -9,8 +9,8 @@ term xterm-256color
 
 # change the message displayed at the bottom of the screen when
 # activity is detected
-activity "activity: window % ^G"
-bell_msg "activity: window % ^G"
+#activity "activity: window % ^G"
+#bell_msg "activity: window % ^G"
 
 # i like to bind these keys to select other windows, kinda like
 # irssi does, and i usually have 15-20 wins open
