@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/sjlu/Dropbox/Development/Web/vbl/web/content/labs/meiosis_activity'
 let g:netrw_dirhist_2='/Users/sjlu/Dropbox/Development/Web/vbl/web/content/labs/enzyme_state_diagram'
+let g:netrw_dirhist_3='/Users/sjlu/.dotfiles/.git'
