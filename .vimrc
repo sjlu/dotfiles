@@ -62,3 +62,8 @@ set cursorcolumn!
 " some key rebindings
 :command -bang Q quit<bang>
 :command -bang W write<bang>
+
+" lusty file explorer
+:map , :LustyFilesystemExplorer<Return>
+:map . :LustyBufferGrep<Return>
+

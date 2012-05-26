@@ -3,3 +3,5 @@
 	email = tacticalazn@gmail.com
 [core]
 	excludesfile = /home/sjlu/.gitignore_global
+[mergetool]
+	keepBackup = true

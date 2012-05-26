@@ -84,6 +84,11 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
+if [ -e /usr/local/bin/mvim ]; then
+   alias vim="mvim -v"
+   export EDITOR="mvim -v"
+fi
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
