@@ -89,6 +89,9 @@ if [ -e /usr/local/bin/mvim ]; then
    export EDITOR="mvim -v"
 fi
 
+if [ -e /Applications/MAMP/bin/php/php5.3.6/bin/php ]; then
+   alias php="/Applications/MAMP/bin/php/php5.3.6/bin/php"
+fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
