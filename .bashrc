@@ -84,13 +84,11 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
-if [ -e /usr/local/bin/mvim ]; then
-   alias vim="mvim -v"
-   export EDITOR="mvim -v"
-fi
 
 if [ -e /Applications/MAMP/bin/php/php5.3.6/bin/php ]; then
    alias php="/Applications/MAMP/bin/php/php5.3.6/bin/php"
+   alias php-logs="tail -f /Applications/MAMP/logs/php_error.log"
+   alias mamp-vhosts="vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 fi
 
 # Alias definitions.

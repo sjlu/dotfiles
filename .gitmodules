@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/vim-handlebars"]
 	path = .vim/bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
-[submodule ".vim/bundle/LustyExplorer"]
-	path = .vim/bundle/LustyExplorer
-	url = https://github.com/vim-scripts/LustyExplorer.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
