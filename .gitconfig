@@ -2,6 +2,12 @@
 	name = Steven Lu
 	email = tacticalazn@gmail.com
 [core]
-	excludesfile = /home/sjlu/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [mergetool]
 	keepBackup = true
+[diff]
+	tool = vimdiff
+[diftool]
+	prompt = false
+[alias]
+	diff = difftool
