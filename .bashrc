@@ -85,11 +85,9 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
-if [ -e /Applications/MAMP/bin/php/php5.3.6/bin/php ]; then
-   alias php="/Applications/MAMP/bin/php/php5.3.6/bin/php"
-   alias php-logs="tail -f /Applications/MAMP/logs/php_error.log"
-   alias mamp-vhosts="vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
-fi
+alias php.ini="vim /usr/local/etc/php/5.3/php.ini"
+alias vhosts.conf="sudo vim /etc/apache2/extra/httpd-vhosts.conf"
+alias httpd.conf="sudo vim /etc/apache2/httpd.conf"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

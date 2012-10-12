@@ -21,7 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH="/Applications/MAMP/bin/php/php5.3.6/bin:/usr/local/bin:$PATH"
+PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
