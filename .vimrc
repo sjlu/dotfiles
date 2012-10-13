@@ -45,14 +45,6 @@ call pathogen#helptags()
 filetype plugin on
 syntax on
 
-" indent-guides stuff
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:indent_guides_auto_colors = 0
-:hi IndentGuidesOdd  ctermbg=234
-:hi IndentGuidesEven ctermbg=236
-
 " cursor highlighting
 hi CursorLine     cterm=NONE ctermbg=17
 hi CursorColumn   cterm=NONE ctermbg=17
