@@ -7,7 +7,9 @@
 	keepBackup = true
 [diff]
 	tool = vimdiff
-[diftool]
+[difftool]
 	prompt = false
 [alias]
 	diff = difftool
+[color]
+   ui = true
