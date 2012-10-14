@@ -31,6 +31,8 @@ if [ -f ~/.bash_prompt ]; then
 fi
 
 # OSX bash completion
-if [ -f /usr/local/bin/brew && -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ -f /usr/local/bin/brew ]; then
+   if [ -f `brew --prefix`/etc/bash_completion ]; then
+      . `brew --prefix`/etc/bash_completion
+   fi
 fi
