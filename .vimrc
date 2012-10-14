@@ -1,3 +1,6 @@
+" Pathogen stuff
+call pathogen#infect()
+
 set t_Co=256
 " colorscheme desert256
 colorscheme tir_black
@@ -11,6 +14,9 @@ set softtabstop=3
 :set wrap
 :set linebreak
 :set nolist
+
+syntax on
+filetype plugin on
 
 set expandtab
 :syn on
@@ -35,15 +41,6 @@ set autoindent    " keep indentation level
 set confirm       " dialog asking to confirm things isntead of error
 
 hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
-
-" use pathogen
-filetype off
-
-call pathogen#infect()
-call pathogen#helptags()
-
-filetype plugin on
-syntax on
 
 " cursor highlighting
 hi CursorLine     cterm=NONE ctermbg=17
