@@ -1,5 +1,7 @@
 TERM=xterm-256color
 export EDITOR=vim
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)

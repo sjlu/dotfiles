@@ -23,5 +23,3 @@ fi
 
 PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
