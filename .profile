@@ -23,3 +23,7 @@ fi
 
 PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
+if [ -f /usr/local/bin/rbenv ]; then
+   PATH="$HOME/.rbenv/bin:$PATH"
+   eval "$(rbenv init -)"
+fi
