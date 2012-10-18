@@ -21,7 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
+PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 if [ -f /usr/local/bin/rbenv ]; then
    PATH="$HOME/.rbenv/bin:$PATH"
