@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/sjlu/Dropbox/Development/Web/intel-isef/application/controllers'
 let g:netrw_dirhist_2='/Users/sjlu/Dropbox/Development/Web/fb-bday-gifts/.git'
 let g:netrw_dirhist_3='/Users/sjlu/Dropbox/Development/Web/secrets/.git'
+let g:netrw_dirhist_4='/Users/sjlu/Dropbox/Development/Web/ci-bootstrap/submodules/twitter-bootstrap'
+let g:netrw_dirhist_5='/Users/sjlu/Dropbox/Development/Web/sns/application/config/apns'
