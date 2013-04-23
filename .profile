@@ -21,9 +21,13 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH="/usr/local/Cellar/php53/5.3.17/bin:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+PATH="/usr/local/share/python:$PATH"
 
 if [ -f /usr/local/bin/rbenv ]; then
    PATH="$HOME/.rbenv/bin:$PATH"
    eval "$(rbenv init -)"
 fi
+
+export GITROOT=$HOME/Development

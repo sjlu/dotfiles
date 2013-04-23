@@ -10,6 +10,10 @@
 [difftool]
 	prompt = false
 [alias]
-	diff = difftool
+   l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+   ll = log --stat --abbrev-commit
+   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+   d = diff --color-words
 [color]
-   ui = true
+   ui = auto
+   interactive = auto
