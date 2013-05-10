@@ -30,6 +30,10 @@ if [ -f ~/.bash_prompt ]; then
     source ~/.bash_prompt
 fi
 
+if [ -f ~/.bash_exports ]; then
+    source ~/.bash_exports
+fi
+
 # OSX bash completion
 if [ -f /usr/local/bin/brew ]; then
    if [ -f `brew --prefix`/etc/bash_completion ]; then
