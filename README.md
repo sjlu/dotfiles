@@ -8,7 +8,7 @@ My primary computers are a Macbook Pro and a Linux desktop running Ubuntu. I lik
 
         git clone https://github.com/sjlu/dotfiles.git .dotfiles
 
-2. If you're using a Mac, install the fonts, then install the Terminal theme (remember to default it).
+2. If you're using a Mac, install the fonts, then install the Terminal theme (remember to default it). Alternatively, you can use "Menlo" font on Mac if you're uncomfortable with installing these fonts. Note that you do so after when you install the `IR_Black.terminal` file.
 
         open .dotfiles/fonts/*.ttf
         open .dotfiles/IR_Black.terminal
