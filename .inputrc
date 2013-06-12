@@ -1,14 +1,4 @@
 set completion-ignore-case On
-set bell-style none
-set editing-mode vi
-
-$if mode=vi
-  set keymap vi-command
-  "gg": beginning-of-history
-  "G": end-of-history
-  set keymap vi-insert
-  "jj": vi-movement-mode
-  "\C-p": history-search-backward
 
 "\e[1~": beginning-of-line
 "\e[4~": end-of-line

@@ -9,6 +9,10 @@
    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
    d = diff --color-words
    s = status
+   b = branch
+   f = fetch
+   ff = fetch --all
+   rr = reset --hard
 [color]
    ui = auto
    interactive = auto
