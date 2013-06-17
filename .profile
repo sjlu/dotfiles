@@ -31,4 +31,4 @@ if [ -f /usr/local/bin/rbenv ]; then
 fi
 
 export GITROOT=$HOME/Development
-
+export CREDENTIALS_FILE=$HOME/.uc-aws-credentials
