@@ -13,6 +13,7 @@
    f = fetch
    ff = fetch --all
    rr = reset --hard
+   aa = add --all
 [color]
    ui = auto
    interactive = auto
