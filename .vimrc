@@ -4,9 +4,8 @@ call pathogen#helptags()
 
 set t_Co=256
 " colorscheme desert256
-colorscheme tir_black
-" colorscheme solarized 
-set background=dark
+" colorscheme tir_black
+colorscheme tomorrow-night-bright
 set number
 set shortmess=atI
 set ts=3
@@ -35,12 +34,7 @@ set incsearch        " Incremental search
 set autowrite        " Automatically save before commands like :next and :make
 set hidden           " Hide buffers when they are abandoned
 set nocompatible
-
-" powerline
-set laststatus=2
-" set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-let g:Powerline_symbols = 'fancy'
-
+set laststatus=2 " Show some status bar.
 set wildmenu      " bette rmenu or something
 set backspace=2   " indent over EOLs
 set autoindent    " keep indentation level
@@ -53,3 +47,9 @@ set cursorcolumn
 " some key rebindings
 :command -bang Q quit<bang>
 :command -bang W write<bang>
+
+" vim-airline related things
+" let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+" let g:airline#extensions#tabline#enabled = 1
