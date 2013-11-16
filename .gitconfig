@@ -8,14 +8,19 @@
    ll = log --stat --abbrev-commit
    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
    d = diff --color-words
-   s = status
+   dd = difftool -y -t Kaleidoscope
+   s = status -sbu
    b = branch
    f = fetch
    ff = fetch --all
    rr = reset --hard
+   a = add
    aa = add --all
-   c = commit -a
+   c = commit
    cc = commit -a --amend
+   cp = cherry-pick
+   co = checkout
+   u = reset HEAD
 [color]
    ui = auto
    interactive = auto
@@ -23,6 +28,18 @@
 	default = simple
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan

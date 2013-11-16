@@ -8,10 +8,10 @@ set t_Co=256
 colorscheme tomorrow-night-bright
 set number
 set shortmess=atI
-set ts=3
-set sw=3 et
-set shiftwidth=3
-set softtabstop=3
+set ts=2
+set sw=2 et
+set shiftwidth=2
+set softtabstop=2
 :set wrap
 :set linebreak
 :set nolist
