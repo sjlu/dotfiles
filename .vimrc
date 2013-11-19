@@ -5,7 +5,7 @@ call pathogen#helptags()
 set t_Co=256
 " colorscheme desert256
 " colorscheme tir_black
-colorscheme tomorrow-night-bright
+colorscheme Tomorrow-Night-Bright
 set number
 set shortmess=atI
 set ts=2
