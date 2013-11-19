@@ -21,4 +21,4 @@ Dotfiles, nothing more to say here.
 
         rm .profile .bash_profile
         ln -s .dotfiles/.* ~/
-        rm -rf ~/.git
+        rm -rf ~/.git ~/.gitmodules
