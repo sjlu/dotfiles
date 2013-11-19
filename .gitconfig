@@ -24,8 +24,6 @@
 [color]
    ui = auto
    interactive = auto
-[push]
-	default = simple
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
