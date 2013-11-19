@@ -21,22 +21,26 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Node.js
 PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
-PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
-PATH="/usr/local/share/python:$PATH"
 
+# PHP on Mac OS X
+if [ -f /usr/local/bin/brew ]; then
+  PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+fi
+
+
+# Ruby
 if [ -f /usr/local/bin/rbenv ]; then
    PATH="$HOME/.rbenv/bin:$PATH"
    eval "$(rbenv init -)"
 fi
 
-# set where virutal environments will live
+# Python
+PATH="/usr/local/share/python:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
-# ensure all new environments are isolated from the site-packages directory
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-# use the same directory for virtualenvs as virtualenvwrapper
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# makes pip detect an active virtualenv and install to it
 export PIP_RESPECT_VIRTUALENV=true
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
