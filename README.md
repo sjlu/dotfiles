@@ -17,8 +17,8 @@ Dotfiles, nothing more to say here.
         ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
         brew install screen
     
-4. Make a symbolic link into your home folder.
+4. Run the install script.
 
-        rm .profile .bash_profile
-        ln -s .dotfiles/.* ~/
-        rm -rf ~/.git ~/.gitmodules
+        cd .dotfiles
+        ./install.sh
+
