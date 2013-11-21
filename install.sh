@@ -1,3 +1,3 @@
 rm ~/.profile ~/.bashrc
-ln -s .* ~/
+ln -s ~/.dotfiles/.* ~/
 rm ~/.git ~/.gitmodules
