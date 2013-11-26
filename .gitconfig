@@ -6,7 +6,7 @@
 [alias]
    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
    ll = log --stat --abbrev-commit
-   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
    d = diff --color-words
    dd = difftool -y -t Kaleidoscope
    s = status -sbu
@@ -20,7 +20,6 @@
    cc = commit -a --amend
    cp = cherry-pick
    co = checkout
-   u = reset HEAD
 [color]
    ui = auto
    interactive = auto
