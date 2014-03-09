@@ -24,12 +24,6 @@ fi
 # Node.js
 PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
-# PHP on Mac OS X
-if [ -f /usr/local/bin/brew ]; then
-  PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
-fi
-
-
 # Ruby
 if [ -f /usr/local/bin/rbenv ]; then
    PATH="$HOME/.rbenv/bin:$PATH"
