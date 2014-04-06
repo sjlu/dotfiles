@@ -24,14 +24,7 @@ fi
 # Node.js
 PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
-# Ruby
-if [ -f /usr/local/bin/rbenv ]; then
-   PATH="$HOME/.rbenv/bin:$PATH"
-   eval "$(rbenv init -)"
-fi
-
 # Python
-PATH="/usr/local/share/python:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
@@ -40,5 +33,16 @@ if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi
 
-export GITROOT=$HOME/Development
-export CREDENTIALS_FILE=$HOME/.uc-aws-credentials
+# If Homebrew, do these commands.
+if [ -f /usr/local/bin/brew ]; then
+  # OSX bash completion
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+
+  if [ -f `brew --prefix josegonzalez/php/php55` ]; then
+    export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+  fi
+
+  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+fi
