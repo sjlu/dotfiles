@@ -14,8 +14,8 @@ Dotfiles, nothing more to say here.
         
 3. Install Homebrew and dependencies.
 
-        ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-        brew install screen
+        ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+        brew install screen bash vim git
     
 4. Run the install script.
 
