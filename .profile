@@ -45,4 +45,6 @@ if [ -f /usr/local/bin/brew ]; then
   fi
 
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+  source $(brew --prefix nvm)/nvm.sh
 fi
