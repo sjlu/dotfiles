@@ -40,11 +40,14 @@ if [ -f /usr/local/bin/brew ]; then
     . `brew --prefix`/etc/bash_completion
   fi
 
+  
   if [ -f `brew --prefix josegonzalez/php/php55` ]; then
     export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
   fi
 
+  # rbenv
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+  # nvm
   source $(brew --prefix nvm)/nvm.sh
 fi
