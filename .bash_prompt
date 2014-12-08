@@ -32,7 +32,18 @@ function prompt_func() {
   else
     venv=''
   fi
-  prompt="${TITLEBAR}${DARK_GRAY}[${RED}${venv}${BLUE}\w${DARK_GRAY}]${LIGHT_GREEN}$(parse_git_branch)${COLOR_NONE}"
+  if [ "$USER" -ne "sjlu" ]; then
+    uname="$USER "
+  else
+    uname=""
+  fi
+  if [ -n "$SSH_CLIENT" ]; then
+    if [ "$USER" -ne "sjlu" ]; then
+      venv="$USER@$HOSTNAME "
+      uname=""
+    fi
+  fi
+  prompt="${TITLEBAR}${DARK_GRAY}[${RED}${uname}${venv}${BLUE}\w${DARK_GRAY}]${LIGHT_GREEN}$(parse_git_branch)${COLOR_NONE}"
   if test $previous_return_value -eq 0
   then
     PS1="${prompt}➔ "
