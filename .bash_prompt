@@ -27,7 +27,7 @@ fi
 function prompt_func() {
   previous_return_value=$?;
   # prompt="${TITLEBAR}$BLUE[$RED\w$GREEN$(__git_ps1)$YELLOW$(git_dirty_flag)$BLUE]$COLOR_NONE "
-  venv = ''
+  venv=''
   if [ -n "$SSH_CLIENT" ]; then
     venv="$HOSTNAME "
   fi
