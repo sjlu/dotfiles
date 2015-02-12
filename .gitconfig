@@ -12,11 +12,13 @@
    s = status -sbu
    b = branch
    f = fetch
+   p = push
    ff = fetch --all
+   rb = rebase
    rr = reset --hard
    a = add
    aa = add --all
-   c = commit
+   c = commit -n
    cc = commit -a --amend
    cp = cherry-pick
    co = checkout
