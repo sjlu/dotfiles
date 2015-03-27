@@ -19,7 +19,7 @@
    a = add
    aa = add --all
    c = commit -n
-   cc = commit -a --amend
+   cc = commit -a --amend -n
    cp = cherry-pick
    co = checkout
 [color]
