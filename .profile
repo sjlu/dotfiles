@@ -21,18 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Node.js
-PATH="/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH"
-
-# Python
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-  source /usr/local/bin/virtualenvwrapper.sh
-fi
-
 # If Homebrew, do these commands.
 if [ -f /usr/local/bin/brew ]; then
   # OSX bash completion
@@ -40,23 +28,12 @@ if [ -f /usr/local/bin/brew ]; then
     . `brew --prefix`/etc/bash_completion
   fi
 
-  
-  if [ -f `brew --prefix josegonzalez/php/php55` ]; then
-    export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
-  fi
-
-  # rbenv
-  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
   # nvm
-  source $(brew --prefix nvm)/nvm.sh
+  if [ -f `brew --prefix nvm`/nvm.sh ]; then
+    source $(brew --prefix nvm)/nvm.sh
+  fi
 fi
 
 # Go
 export GOPATH=$HOME/Development/go
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
