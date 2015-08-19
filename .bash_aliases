@@ -16,5 +16,5 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # abacus specific
-alias abacus="cd ~/Development/web"
+alias abacus="cd ~/Development/abacus"
 
