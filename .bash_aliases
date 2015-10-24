@@ -1,8 +1,3 @@
-# aliases
-alias php.ini="vim /usr/local/etc/php/5.4/php.ini"
-alias vhosts.conf="sudo vim /etc/apache2/extra/httpd-vhosts.conf"
-alias httpd.conf="sudo vim /etc/apache2/httpd.conf"
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -16,5 +11,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # abacus specific
-alias abacus="cd ~/Development/abacus"
+alias abacus="cd ~/Code/abacus"
 
+# docker quickstart
+if [ -x '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh' ]; then
+  alias docker-quickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
+fi
