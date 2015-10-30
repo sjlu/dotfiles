@@ -1,0 +1,8 @@
+# alt+cmd / = fullscreen
+bind /:alt;cmd move screenOriginX;screenOriginY screenSizeX;screenSizeY
+
+# alt+cmd [ = left half
+bind [:alt;cmd move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+
+# alt+cmd ] = right half
+bind ]:alt;cmd move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY

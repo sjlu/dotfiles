@@ -11,5 +11,5 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew tap homebrew/services
 brew install mysql redis mongodb git wget vim bash bash-completion
 brew install caskroom/cask/brew-cask
-brew cask install google-chrome sublime-text dropbox google-drive viscosity flux spotify istat-menus
+brew cask install google-chrome sublime-text dropbox google-drive viscosity flux spotify istat-menus 1password mattr-slate
 
