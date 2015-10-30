@@ -1,3 +1,6 @@
+# hide menubar icon
+config menuBarIconHidden true
+
 # alt+cmd / = fullscreen
 bind /:alt;cmd move screenOriginX;screenOriginY screenSizeX;screenSizeY
 
