@@ -23,6 +23,8 @@ fi
 
 # If Homebrew, do these commands.
 if [ -f /usr/local/bin/brew ]; then
+  export HOMEBREW_CASK_OPTS="--appdir=/Applications" 
+
   # OSX bash completion
   if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
