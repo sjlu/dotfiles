@@ -34,3 +34,8 @@ fi
 if [ -f ~/.bash_exports ]; then
     source ~/.bash_exports
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/sjlu/.travis/travis.sh ] && source /Users/sjlu/.travis/travis.sh

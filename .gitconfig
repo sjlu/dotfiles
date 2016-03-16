@@ -13,6 +13,8 @@
    b = branch
    f = fetch
    p = push
+   ph = push heroku
+   fr = pull --rebase
    ff = fetch --all
    rb = rebase
    rr = reset --hard
