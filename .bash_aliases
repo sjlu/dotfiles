@@ -14,10 +14,3 @@ fi
 # nvm specific
 alias vnvm="nvm use --delete-prefix"
 
-# abacus specific
-alias abacus="cd ~/Code/abacus"
-
-# docker quickstart
-if [ -x '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh' ]; then
-  alias docker-quickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
-fi
