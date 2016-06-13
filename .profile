@@ -32,7 +32,8 @@ if [ -f /usr/local/bin/brew ]; then
 
   # nvm
   if [ -f `brew --prefix nvm`/nvm.sh ]; then
-    source $(brew --prefix nvm)/nvm.sh
+    export NVM_DIR="$HOME/.nvm"
+    . "$(brew --prefix nvm)/nvm.sh"
   fi
 
   # gcloud
@@ -45,7 +46,3 @@ if [ -f /usr/local/bin/brew ]; then
   fi
 fi
 
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
