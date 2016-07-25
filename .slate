@@ -1,6 +1,12 @@
 # hide menubar icon
 config menuBarIconHidden true
 
+# layouts
+layout code 'Terminal' move screenOriginX;screenOriginY screenSizeX/12*2;screenSizeY
+layout code 'Atom' move screenOriginX+screenSizeX/12*2;screenOriginY screenSizeX/12*5;screenSizeY
+layout code 'Google Chrome' move screenOriginX+screenSizeX/12*7;screenOriginY screenSizeX/12*5;screenSizeY
+bind 0:alt;cmd layout code
+
 # screen positions
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
