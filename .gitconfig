@@ -20,8 +20,8 @@
    rr = reset --hard
    a = add
    aa = add --all
-   c = commit -n
-   cc = commit -a --amend -n
+   c = commit
+   cc = commit --amend
    cp = cherry-pick
    co = checkout
 [color]

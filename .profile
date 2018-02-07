@@ -44,5 +44,14 @@ if [ -f /usr/local/bin/brew ]; then
     # The next line enables shell command completion for gcloud.
     source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
   fi
+
+  # Python
+  if [ -f /usr/local/opt/python/libexec/bin ]; then
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export PIP_RESPECT_VIRTUALENV=true
+  fi
 fi
+
 
